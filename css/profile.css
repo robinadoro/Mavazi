@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.profile {
+    max-width: 150px;
+    max-height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: ;
+}
+.items {
+    display: flex;
+    list-style: none;
+    width: 200px;
+    justify-content: space-between;
+}
+.totals {
+    display: flex;
+    list-style: none;
+    width: 200px;
+    justify-content: space-between;
+}
