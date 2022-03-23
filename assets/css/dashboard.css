@@ -1,0 +1,19 @@
+* {
+  /* Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.h-20 {
+  height: 20% !important;
+}
+.text-primary {
+  color: #efa8a8 !important;
+}
+.bg-primary{
+  background-color: #efa8a8 !important;
+}
+.btn-outline-primary{
+  color: var(--bs-gray-dark);
+  border-color: #efa8a8 !important;
+}
