@@ -1,5 +1,8 @@
 import { Template } from "./template.mjs";
+import { Database } from "./config.mjs";
 
+const db = new Database();
+const template = new Template();
 let pieData = {
     "T-shirts": 10,
     "Shirts": 5,
@@ -16,10 +19,21 @@ let lineGraphData = {
 }
 
 const injectChart = async () => {
-    let pieChart = new Template().pieChart(pieData);
-    let lineChart = new Template().lineGraph(lineGraphData); 
+    let pieChart = template.pieChart(pieData);
+    let lineChart = template.lineGraph(lineGraphData);
     document.getElementById("pie-chart").setAttribute('data-bss-chart', pieChart);
     document.getElementById("line-chart").setAttribute('data-bss-chart', lineChart);
 }
 
+const trendingList = () => {
+    let trendingData = db.getTrendingData();
+    let trendingList = document.getElementById("trending-list");
+    let trendingListHTML = "";
+    trendingData.forEach(trending => {
+        trendingListHTML += template.trending(trending);
+    });
+    trendingList.innerHTML = trendingListHTML;
+}
+
 injectChart();
+trendingList();
