@@ -169,43 +169,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="chart-area">
-                                        <canvas data-bss-chart='{
-                                                "type":"line",
-                                                "data":{
-                                                    "labels":[
-                                                    "Mon","Tue","Wed","Thur","Fri","Sat","Sun"],
-                                                    "datasets":[
-                                                    {
-                                                        "label":"Recommendations","fill":true,
-                                                        "data":["0","10000","5000","15000","10000","20000","15000","25000"],
-                                                        "backgroundColor":"rgba(78, 115, 223, 0.05)",
-                                                        "borderColor":"#EFA8A8"}]},
-                                                        "options":{
-                                                            "maintainAspectRatio":false,
-                                                            "legend":{
-                                                                "display":false,
-                                                                "labels":{
-                                                                    "fontStyle":"normal"}},"title":{"fontStyle":"normal"},
-                                                                    "scales":{"xAxes":[
-                                                                    {"gridLines":{
-                                                                        "color":"rgb(234, 236, 244)",
-                                                                        "zeroLineColor":"rgb(234, 236, 244)",
-                                                                        "drawBorder":false,"drawTicks":false,"borderDash":["2"],
-                                                                        "zeroLineBorderDash":["2"],"drawOnChartArea":false},
-                                                                        "ticks":{"fontColor":"#858796","fontStyle":"normal",
-                                                                        "padding":20}}],"yAxes":[{"gridLines":{
-                                                                            "color":"rgb(234, 236, 244)",
-                                                                            "zeroLineColor":"rgb(234, 236, 244)",
-                                                                            "drawBorder":false,"drawTicks":false,
-                                                                            "borderDash":["2"],"zeroLineBorderDash":["2"]},
-                                                                            "ticks":{"fontColor":"#858796","fontStyle":"normal",
-                                                                            "padding":20
-                                                                        }
-                                                                    }
-                                                                    ]
-                                                                }
-                                                            }
-                                                        }'></canvas>
+                                        <canvas data-bss-chart='' id="line-chart"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -229,7 +193,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="chart-area">
-                                        <canvas data-bss-chart=''></canvas>
+                                        <canvas data-bss-chart='' id="pie-chart"></canvas>
                                     </div>
 
                                 </div>
@@ -303,11 +267,12 @@
         </a>
     </div>
 
+    <script type="module" src="assets/js/main.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/chart.min.js"></script>
+
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
