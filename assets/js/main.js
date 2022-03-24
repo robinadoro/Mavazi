@@ -37,3 +37,23 @@ const trendingList = () => {
 
 injectChart();
 trendingList();
+
+const signUp = () => {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+    let email = document.getElementById("email").value;
+    let user = {
+        username: username,
+        password: password,
+        email: email
+    }
+    db.setUserData(user);
+}
+
+const saveImage = () => {
+    let image = document.getElementById("image").value;
+    let imageData = {
+        image: image
+    }
+    db.setImages([imageData]);
+}

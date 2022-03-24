@@ -10,10 +10,13 @@
 .text-primary {
   color: #efa8a8 !important;
 }
-.bg-primary{
+.bg-primary {
   background-color: #efa8a8 !important;
 }
-.btn-outline-primary{
+.btn-outline-primary {
   color: var(--bs-gray-dark);
   border-color: #efa8a8 !important;
+}
+.w-10 {
+  width: 10% !important;
 }

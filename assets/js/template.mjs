@@ -93,7 +93,7 @@ export class Template {
     trending(trending) {
         return `
         <div class="d-flex align-items-center flex-column w-10">
-            <img class="border rounded-circle img-profile" src="${trending.img}" />
+            <img height="50" width="50" class="border rounded-circle img-profile" src="${trending.img}" />
             <div class="fw-bold mt-2">${trending.name}</div>
         </div>
         `;

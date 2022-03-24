@@ -89,5 +89,27 @@ export class Database {
         }
     }
 
+    setWardrobe(data) {
+        try {
+            let wardrobe = this.getWardrobe();
+            wardrobe.push(data);
+            this.db.setItem('wardrobe', wardrobe);
+
+            return true;
+        } catch (error) {
+            console.log(error);
+            return false;
+        }
+    }
+
+    getWardrobe() {
+        try {
+            return this.db.getItem('wardrobe');
+        } catch (error) {
+            console.log(error);
+            return [];
+        }
+    }
+
 
 }
