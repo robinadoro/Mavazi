@@ -58,13 +58,14 @@ body {
   color: #000;
 }
 .slide-controls .slider-tab {
+  
   position: absolute;
   height: 100%;
   width: 50%;
   left: 0;
   z-index: 0;
   border-radius: 5px;
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  background: #efa8a8;
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -137,7 +138,7 @@ form .field input:focus::placeholder {
 }
 .form-inner form .pass-link a,
 .form-inner form .signup-link a {
-  color: #fa4299;
+  color: #efa8a8;
   text-decoration: none;
 }
 .form-inner form .pass-link a:hover,
@@ -156,13 +157,7 @@ form .btn .btn-layer {
   width: 300%;
   position: absolute;
   left: -100%;
-  background: -webkit-linear-gradient(
-    right,
-    #a445b2,
-    #fa4299,
-    #a445b2,
-    #fa4299
-  );
+  background: #efa8a8;
   border-radius: 5px;
   transition: all 0.4s ease;
 }
@@ -182,4 +177,9 @@ form .btn input[type="submit"] {
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+}
+.btn-primary {
+  margin: 10px 0;
+  background: #efa8a8 !important;
+  border: none;
 }
