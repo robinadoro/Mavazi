@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.profile {
+  max-width: 100px;
+  max-height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: left 10px;
+  border: radius 50px;
+}
+/* .items {
+  display: flex;
+  list-style: none;
+  width: 200px;
+  justify-content: space-between;
+}
+.totals {
+  display: flex;
+  list-style: none;
+  width: 200px;
+  justify-content: space-between;
+} */
+.mother {
+  width: 500px;
+}
+.wardrobe {
+  max-width: 100px;
+  max-height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: left 10px;
+  border: radius 50px;
+}
+
+.light-pink {
+  background-color: #f3efef;
+}
+.light-green {
+  background-color: #e4ebe8;
+}
+
+.rounded-corner{
+  border-radius: 18px;
+}
