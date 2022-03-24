@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/auth.css">
     <!-- <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css"> -->
-    <title>Document</title>
+    <title>Mavazi - Login Pages</title>
 </head>
 
 <body>
@@ -41,7 +41,7 @@
                         </div>
                         <div class="field btn">
                             <div class="btn-layer"></div>
-                            <input type="submit" value="Login">
+                            <input type="submit" value="Login" id="loginButton">
                         </div>
                         <div class="signup-link">
                             Not a member? <a href="">Signup now</a>
@@ -60,12 +60,13 @@
                         <div class="field">
                             <input type="password" placeholder="Confirm password" required>
                         </div>
-                        <button class="btn btn-primary">Sign Up</button>
+                        <button class="btn btn-primary" id="signupButton">Sign Up</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
     <script>
         const loginText = document.querySelector(".title-text .login");
         const loginForm = document.querySelector("form.login");
@@ -82,7 +83,16 @@
         });
         signupLink.onclick = (() => {
             signupBtn.click();
+
             return false;
+        });
+        document.getElementById("loginButton").addEventListener("click", function (e) {
+            e.preventDefault();
+            window.location.assign('index.html');
+        });
+        document.getElementById("signupButton").addEventListener("click", function (e) {
+            e.preventDefault();
+            window.location.assign('index.html');
         });
     </script>
 </body>

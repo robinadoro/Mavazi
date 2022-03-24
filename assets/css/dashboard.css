@@ -20,3 +20,16 @@
 .w-10 {
   width: 10% !important;
 }
+.dropzone {
+  background: white;
+  border-radius: 5px;
+  border: 2px dashed #efa8a8;
+  border-image: none;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-primary {
+  background-color: #efa8a8 !important;
+  border-color: #efa8a8 !important;
+}
