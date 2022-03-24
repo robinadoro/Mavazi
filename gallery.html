@@ -1,100 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/gallery.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mavazi</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" />
+  <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css" />
+  <link rel="stylesheet" href="./css/gallery.css">
+  <link rel="stylesheet" href="./css/profile.css">
+  <link rel="stylesheet" href="./assets/css/dashboard.css">
+
+  <title>Mavazi</title>
 </head>
+
 <body>
-    <!-- Navigation Bar  -->
-    <div class="container">
+  <div class="wrapper" id="wrapper">
+
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-light align-items-start sidebar sidebar-light accordion p-0">
+      <div class="container-fluid d-flex flex-column p-0">
+        <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+          <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+          </div>
+          <div class="d-flex flex-column align-items-start">
+            <div class="sidebar-brand-text mx-3"><span>Mavazi</span></div>
+          </div>
+        </a>
+        <hr class="sidebar-divider my-0" />
+        <ul class="navbar-nav text-light" id="accordionSidebar">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html"><i class="fas fa-tachometer-alt item"></i><span
+                class="item">Dashboard</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html"><i class="fas fa-images"></i><span>Gallery</span></a>
+          </li>
+        </ul>
+        <div class="text-center d-none d-md-inline">
+          <button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="row">
+
+      <!-- Navigation Bar  -->
+      <div class="col-md-9">
         <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="">ALBUMS</a></li>
-                    <li><a href="">PHOTOS</a></li>
-                    <li><a href="">VIDEOS</a></li>
-                </ul>    
-            </nav>
+          <!-- <nav>
+          <ul>
+            <li><a href="">ALBUMS</a></li>
+            <li><a href="">PHOTOS</a></li>
+            <li><a href="">VIDEOS</a></li>
+          </ul>
+        </nav> -->
         </div>
         <hr style="height:2px;border-width:0;color:gray;background-color:gray">
         <div class="photo-card">
-            <div class="card-group">
-                <div class="card">
-                  <img src="./imgs/1.jpg" height="300" width="200" class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card">
-                  <img src="./imgs/10.jpg" height="300" width="200" class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card">
-                  <img src="./imgs/11.jpg" height="300" width="200" class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card">
-                    <img src="./imgs/12.jpg" height="300" width="200" class="card-img-top" alt="...">
-                    
-                  </div>
-                  <div class="card">
-                    <img src="./imgs/13.jpg" height="300" width="200" class="card-img-top" alt="...">
-                    
-                  </div>
-              </div>
-              <div class="card-group">
-                <div class="card">
-                  <img src="./imgs/14.jpg" height="300" width="200" class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card">
-                  <img src="./imgs/15.jpg" height="300" width="200" class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card">
-                  <img src="./imgs/16.jpg" height="300" width="200" class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card">
-                    <img src="./imgs/2.jpg" height="300" width="200" class="card-img-top" alt="...">
-                    
-                  </div>
-                  <div class="card">
-                    <img src="./imgs/3.jpg" height="300" width="200" class="card-img-top" alt="...">
-                    
-                  </div>
-              </div>
-              <div class="card-group">
-                <div class="card">
-                  <img src="./imgs/4.jpg" height="300" width="200" class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card">
-                  <img src="./imgs/5.jpg" height="300" width="200" class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card">
-                  <img src="./imgs/6.jpg" height="300" width="200" class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card">
-                    <img src="./imgs/7.jpg" height="300" width="200" class="card-img-top" alt="...">
-                    
-                  </div>
-                  <div class="card">
-                    <img src="./imgs/8.jpg" height="300" width="200" class="card-img-top" alt="...">
-                    
-                  </div>
-              </div>
-             
-             
-        </div>
-    </div>
-    
+          <div class="card-group">
+            <div class="card">
+              <img src="./imgs/1.jpg" height="300" width="200" class="card-img-top" alt="...">
 
+            </div>
+            <div class="card">
+              <img src="./imgs/10.jpg" height="300" width="200" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card">
+              <img src="./imgs/11.jpg" height="300" width="200" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card">
+              <img src="./imgs/12.jpg" height="300" width="200" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card">
+              <img src="./imgs/13.jpg" height="300" width="200" class="card-img-top" alt="...">
+
+            </div>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <img src="./imgs/14.jpg" height="300" width="200" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card">
+              <img src="./imgs/15.jpg" height="300" width="200" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card">
+              <img src="./imgs/16.jpg" height="300" width="200" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card">
+              <img src="./imgs/2.jpg" height="300" width="200" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card">
+              <img src="./imgs/3.jpg" height="300" width="200" class="card-img-top" alt="...">
+
+            </div>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <img src="./imgs/4.jpg" height="300" width="200" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card">
+              <img src="./imgs/5.jpg" height="300" width="200" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card">
+              <img src="./imgs/6.jpg" height="300" width="200" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card">
+              <img src="./imgs/7.jpg" height="300" width="200" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card">
+              <img src="./imgs/8.jpg" height="300" width="200" class="card-img-top" alt="...">
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-md-3 p-4">
+        <div class="row">
+          <div class="col-md-8">
+            <p class="text-black fs-2">Hi Lillian</p>
+            <p>Good morning,</p>
+          </div>
+          <div class="col-md-4 d-flex justify-content-evenly">
+            <i class="fa fa-bell-o fa-2x text-primary"></i>
+            <i class="fa fa-cog fa-2x text-primary"></i>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center w-100">
+          <div>
+            <img src="image.jpg" class="rounded" alt="mimi" width="100" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+            <h4>500</h4>
+            <p>Coats</p>
+          </div>
+          <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+            <h4>20</h4>
+            <p>Blazers</p>
+          </div>
+          <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+            <h4>0</h4>
+            <p>T-shirt</p>
+          </div>
+        </div>
+
+        <div class="row h-25">
+          <div class="col-md-6">
+            <div class="card light-pink h-100 rounded-corner ">
+              <div class="d-flex h-100 flex-column  justify-content-between">
+                <div class="d-flex justify-content-end w-100 p-2">
+                  <i class="fa fa-close "></i>
+                </div>
+                <div class="icon p-2">
+                  <i class="fa fa-camera fa-2x"></i>
+                  <p class="fs-4 fw-bold text-black">Photos</p>
+                  <p>Click to add photos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card light-green h-100 rounded-corner ">
+              <div class="d-flex h-100 flex-column  justify-content-between">
+                <div class="d-flex justify-content-end w-100 p-2">
+                  <i class="fa fa-close "></i>
+                </div>
+                <div class="icon p-2">
+                  <i class="fa fa-shopping-bag fa-2x"></i>
+                  <p class="fs-4 fw-bold text-black">Shop</p>
+                  <p>Click to shop</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="row">
+            <div class="col-md-4 my-2">
+              <img
+                src="https://images.unsplash.com/photo-1614291129408-3dd5436942e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt="" width="100" height="100" />
+            </div>
+            <div class="col-md-4 my-2">
+              <img
+                src="https://images.unsplash.com/flagged/photo-1578905326519-3aa98aa6a728?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                alt="" width="100" height="100" />
+            </div>
+            <div class="col-md-4 my-2">
+              <img
+                src="https://images.unsplash.com/photo-1508970707-f6426fb47503?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt="" width="100" height="100" />
+            </div>
+            <div class="col-md-4 my-2">
+              <img
+                src="https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt="" width="100" height="100" />
+            </div>
+            <div class="col-md-4 my-2">
+              <img
+                src="https://images.unsplash.com/photo-1560457099-64cb8a5eb503?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
+                alt="" width="100" height="100" />
+            </div>
+            <div class="col-md-4 my-2">
+              <img
+                src="https://images.unsplash.com/photo-1572495532056-8583af1cbae0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt="" width="100" height="100" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
 <link rel="stylesheet" href="./js/jquery-3.6.0.js">
 <link rel="stylesheet" href="./js/gellery.js">
+
 </html>

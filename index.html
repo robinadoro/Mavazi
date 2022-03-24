@@ -1,0 +1,342 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css" />
+    <link rel="stylesheet" href="./assets/css/dashboard.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+
+    <title>Mavazi</title>
+</head>
+
+<body id="page-top">
+    <div class="wrapper" id="wrapper">
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-light align-items-start sidebar sidebar-light accordion p-0">
+            <div class="container-fluid d-flex flex-column p-0">
+                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15">
+                        <i class="fas fa-laugh-wink"></i>
+                    </div>
+                    <div class="d-flex flex-column align-items-start">
+                        <div class="sidebar-brand-text mx-3"><span>Mavazi</span></div>
+                    </div>
+                </a>
+                <hr class="sidebar-divider my-0" />
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-tachometer-alt item"></i><span
+                                class="item">Dashboard</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-images"></i><span>Gallery</span></a>
+                    </li>
+                </ul>
+                <div class="text-center d-none d-md-inline">
+                    <button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <div class="row">
+            <div class="col-md-9">
+                <div class="d-flex flex-column" id="content-wrapper">
+                    <div id="content">
+                        <nav class="navbar navbar-light navbar-expand my-4 topbar static-top">
+                            <div class="container-fluid">
+                                <button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop"
+                                    type="button">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+
+                                <div class="d-md-flex justify-content-evenly w-100 d-none" id="trending-list"></div>
+                            </div>
+                        </nav>
+
+                        <div class="container-fluid">
+                            <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                                <h3 class="text-dark mb-0">Analytics</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-xl-4 mb-4">
+                                    <div class="card shadow border-start-primary py-2">
+                                        <div class="card-body">
+                                            <div class="row align-items-center no-gutters">
+                                                <div class="col me-2">
+                                                    <div class="text-uppercase text-primary fw-bold text-xs mb-1">
+                                                        <span>Wardrobe</span>
+                                                    </div>
+                                                    <div class="text-dark fw-bold h5 mb-0">
+                                                        <span>100</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <i class="fas fa-tshirt fa-2x text-gray-300"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-4">
+                                    <div class="card shadow border-start-success py-2">
+                                        <div class="card-body">
+                                            <div class="row align-items-center no-gutters">
+                                                <div class="col me-2">
+                                                    <div class="text-uppercase fw-bold text-xs mb-1">
+                                                        <span>Events</span>
+                                                    </div>
+                                                    <div class="text-dark fw-bold h5 mb-0">
+                                                        <span>23</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-xl-4 mb-4">
+                                    <div class="card shadow border-start-warning py-2">
+                                        <div class="card-body">
+                                            <div class="row align-items-center no-gutters">
+                                                <div class="col me-2">
+                                                    <div class="text-uppercase text-dark fw-bold text-xs mb-1">
+                                                        <span>Recommendations</span>
+                                                    </div>
+                                                    <div class="text-dark fw-bold h5 mb-0">
+                                                        <span>18</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <i class="fas fa-bar-chart-o fa-2x text-gray-300"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-7 col-xl-8">
+                                    <div class="card shadow mb-4">
+                                        <div class="card-header d-flex justify-content-between align-items-center">
+                                            <h6 class="text-primary fw-bold m-0">
+                                                Weekly Overview
+                                            </h6>
+                                            <div class="dropdown no-arrow">
+                                                <button class="btn btn-link btn-sm dropdown-toggle"
+                                                    aria-expanded="false" data-bs-toggle="dropdown" type="button">
+                                                    <i class="fas fa-ellipsis-v text-gray-400"></i>
+                                                </button>
+                                                <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
+                                                    <p class="text-center dropdown-header">Options</p>
+
+                                                    <a class="dropdown-item" href="#">&nbsp;Hide</a>
+                                                    <a class="dropdown-item" href="#">&nbsp;Reset</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">&nbsp;Download</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="chart-area">
+                                                <canvas data-bss-chart="" id="line-chart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-xl-4">
+                                    <div class="card shadow mb-4">
+                                        <div class="card-header d-flex justify-content-between align-items-center">
+                                            <h6 class="text-primary fw-bold m-0">Wardrobe</h6>
+                                            <div class="dropdown no-arrow">
+                                                <button class="btn btn-link btn-sm dropdown-toggle"
+                                                    aria-expanded="false" data-bs-toggle="dropdown" type="button">
+                                                    <i class="fas fa-ellipsis-v text-gray-400"></i>
+                                                </button>
+                                                <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
+                                                    <p class="text-center dropdown-header">Options</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="chart-area">
+                                                <canvas data-bss-chart="" id="pie-chart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                                <h3 class="text-dark mb-0">Top Recommendations</h3>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-4">
+                                            <!--Card-->
+                                            <div class="card shadow">
+                                                <!--Card image-->
+                                                <div class="view overlay hm-white-slight">
+                                                    <img src="https://mdbootstrap.com/images/regular/people/img%20(76).jpg"
+                                                        class="img-fluid" alt="" />
+                                                    <a href="#">
+                                                        <div class="mask"></div>
+                                                    </a>
+                                                </div>
+                                                <!--/.Card image-->
+
+                                                <!--Card content-->
+                                                <div class="card-block p-2">
+                                                    <!--Title-->
+                                                    <h4 class="card-title"></h4>
+                                                    <!--Text-->
+                                                    <p class="card-text">
+                                                        Some quick example text to build on the card title
+                                                        and make up the bulk of the card's content.
+                                                    </p>
+                                                    <div
+                                                        class="d-flex w-100 justify-content-between align-items-center">
+                                                        <a href="#" class="btn btn-outline-primary">Select</a>
+                                                        <div class="d-none d-md-flex h-20">
+                                                            <span class="badge rounded-pill bg-primary">Primary</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/.Card content-->
+                                            </div>
+                                            <!--/.Card-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="bg-white sticky-footer">
+                        <div class="container my-auto">
+                            <div class="text-center my-auto copyright">
+                                <span>Copyright © Mavazi Group 2022</span>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-md-3 p-4">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="text-black fs-2">Hi Lillian</p>
+                        <p>Good morning,</p>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-evenly">
+                        <i class="fa fa-bell-o fa-2x text-primary"></i>
+                        <i class="fa fa-cog fa-2x text-primary"></i>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                    <div>
+                        <img src="image.jpg" class="rounded" alt="mimi" width="100" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+                        <h4>500</h4>
+                        <p>Coats</p>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+                        <h4>20</h4>
+                        <p>Blazers</p>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+                        <h4>0</h4>
+                        <p>T-shirt</p>
+                    </div>
+                </div>
+
+                <div class="row h-25">
+                    <div class="col-md-6">
+                        <div class="card light-pink h-100 rounded-corner ">
+                            <div class="d-flex h-100 flex-column  justify-content-between">
+                                <div class="d-flex justify-content-end w-100 p-2">
+                                    <i class="fa fa-close "></i>
+                                </div>
+                                <div class="icon p-2">
+                                    <i class="fa fa-camera fa-2x"></i>
+                                    <p class="fs-4 fw-bold text-black">Photos</p>
+                                    <p>Click to add photos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card light-green h-100 rounded-corner ">
+                            <div class="d-flex h-100 flex-column  justify-content-between">
+                                <div class="d-flex justify-content-end w-100 p-2">
+                                    <i class="fa fa-close "></i>
+                                </div>
+                                <div class="icon p-2">
+                                    <i class="fa fa-shopping-bag fa-2x"></i>
+                                    <p class="fs-4 fw-bold text-black">Shop</p>
+                                    <p>Click to shop</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-4 my-2">
+                            <img src="https://images.unsplash.com/photo-1614291129408-3dd5436942e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                alt="" width="100" height="100" />
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <img src="https://images.unsplash.com/flagged/photo-1578905326519-3aa98aa6a728?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                                alt="" width="100" height="100" />
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <img src="https://images.unsplash.com/photo-1508970707-f6426fb47503?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                alt="" width="100" height="100" />
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <img src="https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                alt="" width="100" height="100" />
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <img src="https://images.unsplash.com/photo-1560457099-64cb8a5eb503?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
+                                alt="" width="100" height="100" />
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <img src="https://images.unsplash.com/photo-1572495532056-8583af1cbae0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                alt="" width="100" height="100" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Action Bar -->
+        <a class="border rounded d-inline scroll-to-top" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

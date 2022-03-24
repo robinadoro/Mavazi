@@ -8,7 +8,7 @@
   max-height: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin: left 10px;;
+  margin: left 10px;
   border: radius 50px;
 }
 /* .items {
@@ -31,6 +31,17 @@
   max-height: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin: left 10px;;
+  margin: left 10px;
   border: radius 50px;
+}
+
+.light-pink {
+  background-color: #f3efef;
+}
+.light-green {
+  background-color: #e4ebe8;
+}
+
+.rounded-corner{
+  border-radius: 18px;
 }
