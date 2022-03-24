@@ -23,7 +23,10 @@
   width: 200px;
   justify-content: space-between;
 } */
-div.image {
+.mother {
+  width: 500px;
+}
+.wardrobe {
   max-width: 100px;
   max-height: 100px;
   margin-top: 10px;
